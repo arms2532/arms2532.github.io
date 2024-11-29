@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .menu-link{
+        @apply text-gray-600 hover:text-blue-500
+    }
+
+    .skill-link{
+        @apply bg-white p-6 rounded-lg shadow-md bg-gray-100
+    }
+
+    .skill-item{
+        @apply text-lg sm:text-2xl font-semibold text-blue-700 mb-4
+    }
+
+    .skill-info{
+        @apply bg-white p-6 rounded-lg shadow-xl transform hover:translate-y-1 transition-all duration-300 ease-out
+    }
+
+    .contact-link{
+        @apply text-blue-500 text-xl hover:underline
+    }
+
+    .btn-primary {
+        @apply bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white text-xs sm:text-base font-semibold py-2 px-4 rounded-xl my-3 shadow-md flex items-center space-x-2 transition-transform transform hover:scale-105 hover:shadow-lg
+    }
+}

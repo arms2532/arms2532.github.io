@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Arm Weerawat Wichian, showcasing skills in web development, backend programming, and marketing.">
+    <meta name="keywords" content="Arm Weerawat Wichian, web development, backend, Python, PHP">    
+    <title>Portfolio - Arm Weerawat Wichian</title>
+    <!-- ลิงก์ไปยัง Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed">
+    <!-- ส่วนของ Header -->
+    <header class="sticky top-0 z-40 bg-gray-200 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- logo -->
+            <div class="avatar">
+                <div class="ring-primary ring-offset-base-100 w-12 sm:w-16 rounded-full ring ring-offset-2">
+                  <a href="index.html"><img src="./img/profile02.jpg" /></a>
+                </div>
+            </div>
+            <!-- ชื่อเว็บไซต์ -->
+            <h1 class="text-lg sm:text-3xl font-serif text-gray-800">Arm Resume</h1>
+    
+            <!-- ไอคอน Hamburger -->
+            <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+    
+            <!-- เมนูนำทาง -->
+            <nav id="menu" class="hidden sm:block absolute sm:static top-full left-0 w-full sm:w-auto bg-gray-200 sm:bg-transparent sm:flex sm:items-center">
+                <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3 text-xs sm:text-base p-4 sm:p-0">
+                    <li><a href="#profile-section" class="menu-link">|Profile</a></li>
+                    <li><a href="#experience-section" class="menu-link">|Experience</a></li>
+                    <li><a href="#education-section" class="menu-link">|Education</a></li>
+                    <li><a href="#contact-section" class="menu-link">|Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- profile -->
+    <section id="profile-section" class="m-5 sm:m-10">
+        <div class="container mx-auto px-6 flex-row sm:flex sm:justify-between">
+            <div class="p-3 items-center justify-self-center">
+                <img src="./img/profile01.jpg" class="w-auto sm:max-w-xs rounded-lg sm:runded-xl max-h-72 md:max-h-96">
+            </div>
+            <!-- ข้อมูลส่วนตัว -->
+            <div>
+                <h1 class="text-lg sm:text-2xl md:text-3xl">Profile | ประวัติส่วนตัว</h1>
+                <p class="text-sm sm:text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eum perferendis sed quos ratione quibusdam tempora pariatur architecto vero consequuntur?</p>
+            </div> 
+        </div>
+    </section>
+
+    <!-- ส่วนของประวัติการทำงาน -->
+    <section id="experience-section" class="h-full p-3 sm:p-5">
+        <h1 class="text-lg sm:text-2xl md:text-3xl">Experience | ประวัติการทำงาน</h1>
+        <hr/>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <li>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="timeline-start mb-10 md:text-end">
+                <time class="font-mono italic">2018-2020</time>
+                <div class="text-lg font-black">ที่ว่าการอำเภอนางรอง</div>
+                เจ้าหน้าที่ผลิตบัตรหระจำตัวประชาชน
+                <hr />
+              </div>
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="timeline-end mb-10">
+                <time class="font-mono italic">2011-2018</time>
+                <div class="text-lg font-black">ธุรกิจส่วนตัว</div>
+                ร้านอินเทอร์เน็ตคาเฟ่
+                <hr />
+              </div>
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="timeline-start mb-10 md:text-end">
+                <time class="font-mono italic">2010-2011</time>
+                <div class="text-lg font-black">ครูอัตราจ้าง วิชาคอมพิวเตอร์</div>
+                โรงเรียนบ้านโกรกแก้ว อ.โนนสุวรรณ จ.บุรีรัมย์
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="timeline-end mb-10">
+                <time class="font-mono italic">2011</time>
+                <div class="text-lg font-black">true internet</div>
+                server admin
+                <hr />
+              </div>
+            </li>
+          </ul>
+    </section>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden"); // เปิด/ปิดเมนู
+        });
+        // เลือกลิงก์ที่มีคลาส menu-link ทั้งหมด
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        // เพิ่ม Event Listener ให้กับแต่ละลิงก์
+        menuLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault(); // ป้องกันการกระทำเริ่มต้น
+                const targetId = link.getAttribute('href'); // รับค่า ID เป้าหมาย
+                const targetElement = document.querySelector(targetId); // ค้นหาองค์ประกอบเป้าหมาย
+
+                if (targetElement) {
+                    // ใช้ scrollIntoView เพื่อเลื่อนไปยังเป้าหมาย
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth', // การเลื่อนแบบสมูท
+                        block: 'start' // การจัดตำแหน่งให้เริ่มที่ขอบบน
+                    });
+                }
+            });
+        });
+    </script>
+    <hr>
+</body>
+</html>

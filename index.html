@@ -1,72 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arm Weerawat | Resume</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Arm Weerawat Wichian, showcasing skills in web development, backend programming, and marketing.">
+    <meta name="keywords" content="Arm Weerawat Wichian, web development, backend, Python, PHP">    
+    <title>Portfolio - Arm Weerawat Wichian</title>
+    <!-- ลิงก์ไปยัง Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-6 py-4">
-      <h1 class="text-2xl font-bold">Arm Weerawat Wichian</h1>
-      <p class="text-gray-600">Backend Developer | Marketing Specialist | Entrepreneur</p>
-    </div>
-  </header>
+<body class="bg-gray-100 font-sans leading-relaxed">
 
-  <main class="container mx-auto px-6 py-10">
-    <section class="mb-12">
-      <h2 class="text-xl font-semibold border-b-2 border-gray-300 pb-2">About Me</h2>
-      <p class="mt-4 text-gray-700 leading-relaxed">
-        Hello! I'm Arm Weerawat, a dedicated backend developer with a strong background in marketing and customer service. I’m passionate about crafting efficient systems and exploring creative solutions for everyday problems.
-      </p>
+    <!-- ส่วนของ Header -->
+    <header class="sticky top-0 z-40 bg-gray-200 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- logo -->
+            <div class="avatar">
+                <div class="ring-primary ring-offset-base-100 w-12 sm:w-16 rounded-full ring ring-offset-2">
+                  <a href="index.html"><img src="./src/img/profile02.jpg" /></a>
+                </div>
+            </div>
+            <!-- ชื่อเว็บไซต์ -->
+            <h1 class="text-lg sm:text-3xl font-serif text-gray-800">Arm Resume</h1>
+    
+            <!-- ไอคอน Hamburger -->
+            <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+    
+            <!-- เมนูนำทาง -->
+            <nav id="menu" class="hidden sm:block absolute sm:static top-full left-0 w-full sm:w-auto bg-gray-200 sm:bg-transparent sm:flex sm:items-center">
+                <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3 text-xs sm:text-base p-4 sm:p-0">
+                    <li><a href="#about" class="menu-link">เกี่ยวกับ</a></li>
+                    <li><a href="#skills" class="menu-link">ทักษะ</a></li>
+                    <li><a href="#contact" class="menu-link">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <section id="about">
+        <div class="bg-[url('./src/img/header-bg.jpg')] bg-cover bg-center h-72 sm:h-64 md:h-72 lg:h-[288px] flex items-center">
+            <div class="flex items-center bg-black bg-opacity-80 w-full h-full"><!-- ทำให้ภาพพื้นหลังมืดลง -->
+                <div class="container mx-auto px-6 text-center z-10">
+                    <h2 class="text-xl sm:text-3xl font-serif text-white">สวัสดีครับ! ผมอาม</h2>
+                    <h2 class="text-xl sm:text-3xl font-serif text-white mb-4">วีระวัฒน์ วิเชียร</h2>
+                    <p class="text-xs sm:text-base text-white max-w-2xl mx-auto font-serif">
+                        ผมเป็นนักพัฒนาเว็บไซต์ และการพัฒนา backend ที่มีความสนใจในการพัฒนาโปรแกรมและเทคโนโลยีที่ทันสมัย
+                        ถึงแม้ผมจะมีข้อจำกัดทางด้านร้างกาย แต่ผมก็มีความมุ่งมั่นตั้งใจที่จะพัฒนาตัวเองในสายเทคโนโลยีให้ดีขึ้นเพื่อสามารถนำไปใช้ในงานต่างๆ ได้
+                    </p>
+                    <div class="flex justify-self-center">
+                        <a href="about-me.html" class="btn-primary">
+                        About Me
+                            <span class="transition-transform transform group-hover:translate-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-10 mx-auto flex-row sm:flex px-6 justify-center items-center">
+            <div class="aspect-video">
+                <iframe
+                    src="https://www.youtube.com/embed/8ey9-wWUJEE?si=QZTCgQkMkJV-708s"
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    class="w-full h-full rounded-lg">
+                </iframe>
+            </div>
+        </div>
+    </section>
+<hr>
+    <!------------ ส่วนของ Skills ------------>
+    <section id="skills" class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-serif text-gray-800 mb-8">ทักษะ/ความสามารถ</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- ทักษะ 1 -->
+                <div class="skill-link">
+                    <h3 class="skill-item">Backend Development</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="PHP Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">PHP</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-info w-full" value="80" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Python</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-info w-full" value="70" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1200px-C_Sharp_Logo_2023.svg.png" alt="C# Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">C#</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-info w-full" value="60" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSblOKKbtfBxeDAAnjdRbRE_Hn3YVrrlj35Lg&s" alt="MySQL Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">MySQL</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-info w-full" value="80" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                <!-- ทักษะ 2 -->
+                <div class="skill-link">
+                    <h3 class="skill-item">Frontend Development</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="HTML Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">HTML</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-warning w-full" value="80" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5ryTY9VShCV5uJWhoBXkcxxlFB8O5bbxGA&s" alt="CSS Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">CSS</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-warning w-full" value="70" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">JavaScript</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-warning w-full" value="80" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="Word Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Tailwind CSS</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-warning w-full" value="80" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                <!-- ทักษะ 3 -->
+                <div class="skill-link">
+                    <h3 class="skill-item">Graphic</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Photoshop</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-primary w-full" value="80" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1200px-Adobe_Premiere_Pro_CC_icon.svg.png" alt="Premiere Pro Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Premiere Pro</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-primary w-full" value="80" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Illustrator</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-primary w-full" value="60" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1200px-Adobe_Photoshop_Lightroom_CC_logo.svg.png" alt="Lightroom Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Lightroom</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-primary w-full" value="80" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                <!-- ทักษะ 4 -->
+                <div class="skill-link">
+                    <h3 class="skill-item">Other</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" alt="Word Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">word</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-accent w-full" value="70" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Excel</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-accent w-full" value="60" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/120px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" alt="PowerPoint Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">PowerPoint</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-accent w-full" value="60" max="100"></progress>
+                        </div>
+                        <div class="skill-info">
+                            <div class="justify-self-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Canva_Logo.svg/160px-Canva_Logo.svg.png" alt="Canva Logo" class="h-8">
+                            </div>
+                            <p class="text-gray-600 mt-1 text-base font-bold">Canva</p>
+                            <!-- Progress Bars -->
+                            <progress class="progress progress-accent w-full" value="80" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+    <!-- ส่วนของ Contact -->
+    <section id="contact" class="bg-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-serif text-gray-800 mb-6">ติดต่อฉัน</h2>
+            <p class="text-lg text-gray-600 mb-6">คุณสามารถติดต่อผมผ่านช่องทางต่างๆ ด้านล่างนี้</p>
+            <div class="flex space-x-3 text-xs sm:text-base justify-center flex-wrap">
+                <a href="tel:0801633645" class="contact-link">080-1633645</a>
+                <a href="mailto:arms2532@gmail.com" aria-label="ส่งอีเมลถึง Arm" class="contact-link">อีเมล</a>
+                <a href="https://www.linkedin.com/in/armweerawat" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/arms2532" target="_blank" class="contact-link">GitHub</a>
+                <a href="https://line.me/ti/p/~armsonair" target="_blank" class="contact-link">Line</a>
+            </div>
+        </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-xl font-semibold border-b-2 border-gray-300 pb-2">Skills</h2>
-      <ul class="mt-4 grid grid-cols-2 gap-4">
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>C#</li>
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>Python</li>
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>PHP</li>
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>SQL</li>
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>HTML & CSS</li>
-        <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span>JavaScript</li>
-      </ul>
-    </section>
+    <!-- ส่วนของ Footer -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p>&copy; 2024 Arm Weerawat Wichian | สร้างโดย Arm</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("hidden"); // เปิด/ปิดเมนู
+        });
+                // เลือกลิงก์ที่มีคลาส menu-link ทั้งหมด
+        const menuLinks = document.querySelectorAll('.menu-link');
 
-    <section class="mb-12">
-      <h2 class="text-xl font-semibold border-b-2 border-gray-300 pb-2">Experience</h2>
-      <div class="mt-4">
-        <p class="font-medium">Assistant Village Headman | Moo 6, Nong Bot Subdistrict</p>
-        <p class="text-gray-600 text-sm">2023 - Present</p>
-        <p class="text-gray-700 mt-2">
-          Managed community projects, coordinated local events, and supported administrative operations.
-        </p>
-      </div>
-      <div class="mt-6">
-        <p class="font-medium">Grocery Store Owner</p>
-        <p class="text-gray-600 text-sm">2020 - Present</p>
-        <p class="text-gray-700 mt-2">
-          Successfully managed daily operations, implemented sales strategies, and adapted to competition.
-        </p>
-      </div>
-    </section>
+        // เพิ่ม Event Listener ให้กับแต่ละลิงก์
+        menuLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault(); // ป้องกันการกระทำเริ่มต้น
+                const targetId = link.getAttribute('href'); // รับค่า ID เป้าหมาย
+                const targetElement = document.querySelector(targetId); // ค้นหาองค์ประกอบเป้าหมาย
 
-    <section>
-      <h2 class="text-xl font-semibold border-b-2 border-gray-300 pb-2">Contact</h2>
-      <div class="mt-4 space-y-2">
-        <p><span class="font-medium">Email:</span> arm.weerawat@example.com</p>
-        <p><span class="font-medium">Phone:</span> +66 81 234 5678</p>
-        <p><span class="font-medium">GitHub:</span> <a href="https://github.com/yourusername" class="text-blue-500 underline">github.com/yourusername</a></p>
-        <p><span class="font-medium">LinkedIn:</span> <a href="https://linkedin.com/in/yourprofile" class="text-blue-500 underline">linkedin.com/in/yourprofile</a></p>
-      </div>
-    </section>
-  </main>
+                if (targetElement) {
+                    // ใช้ scrollIntoView เพื่อเลื่อนไปยังเป้าหมาย
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth', // การเลื่อนแบบสมูท
+                        block: 'start' // การจัดตำแหน่งให้เริ่มที่ขอบบน
+                    });
+                }
+            });
+        });
+    </script>
 
-  <footer class="bg-white shadow mt-10">
-    <div class="container mx-auto px-6 py-4 text-center text-gray-600 text-sm">
-      &copy; 2024 Arm Weerawat Wichian. All rights reserved.
-    </div>
-  </footer>
 </body>
 </html>
